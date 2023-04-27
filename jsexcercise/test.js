@@ -40,6 +40,10 @@
             alert ("Ya diste el viejaso, mi buen")
         }
 
+        if (90 <= age || 14 >= age) {
+            alert ("Ya diste el viejaso000, mi buen")
+        }
+
         if (age2 < 90 && age2 > 14) {
             alert ("En el puntoo")
         }
