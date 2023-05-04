@@ -53,3 +53,34 @@
     //    else {
     //        alert("Al principio del camino")
     //    }
+
+    function checkAge(age) {
+        if (age > 18) {
+          return true;
+        } else {
+          return confirm('Did parents allow you?');
+        }
+      }
+
+     function checkAge(age){
+       return (age>18) || confirm("Did parents allow you?");
+     } 
+
+     function checkAge(age) {
+        return (age > 18) ? true : confirm('Did parents allow you?');
+      }
+
+    function min(a,b){
+        if(a>b){
+            return b;
+        }
+        return a;
+    }
+
+    function min(a,b){
+        return(a>b) ? b : a;
+    }
+
+    min(2, 5) == 2
+min(3, -1) == -1
+min(1, 1) == 1
