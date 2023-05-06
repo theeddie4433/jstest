@@ -80,7 +80,16 @@
     function min(a,b){
         return(a>b) ? b : a;
     }
+//-----------------------------
+    function ask(question, yes, no) {
+        if (confirm(question)) yes();
+        else no();
+      }
+      
+      ask(
+        "Do you agree?",
+        () => alert("You agreed."),
+        () => alert("You canceled the execution.")
+      );
 
-    min(2, 5) == 2
-min(3, -1) == -1
-min(1, 1) == 1
+//Modifica el codigo de arriba para que use funciones de flechas en vez de funciones definidas

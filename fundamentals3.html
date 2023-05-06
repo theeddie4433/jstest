@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* For now, just write each function and test the output with console.log.
+
+Write a function called add7 that takes one number and returns that number + 7.
+Write a function called multiply that takes 2 numbers and returns their product.
+Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+Write a function called lastLetter that takes a string and returns the very last letter of that string:
+lastLetter("abcd") should return "d" */
+let n = prompt("Escribe un numero:", 0);
+let y = prompt("Escribe otro numero:", 0);
+let s= prompt("Escribe una palabra", "");
+
+function add7(n){
+    n = Number(n);
+    return n + 7;
+}
+function multiply(n,y){
+    n =Number(n);
+    y =Number(y);
+    return n*y;
+}
+function capitalize(s){
+    return s.charAt(0).toUpperCase() + s.slice(1);
+}
+function lastLetter(s){
+    return s.charAt(s.length-1);
+}
+
+console.log("add7: " + add7(n));
+console.log("multiply: " + multiply(n,y));
+console.log("capitalize: " + capitalize(s));
+console.log("lastLetter: " + lastLetter(s));
+
+    </script>
+</body>
+</html>
