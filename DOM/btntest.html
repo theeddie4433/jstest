@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button test</title>
+</head>
+<body>
+   <!-- Method 1 -->
+    <button onclick="alert('Hello World')">Click Me</button>
+
+    <!-- Method  2 -->
+    <button id="btn">Click Me</button>
+
+    <!-- Method 3 -->
+    <button id="btn1">Click Me Too</button>
+
+    <script>
+        // Method 2
+        const btn = document.querySelector('#btn');
+        btn.onclick = () => alert("Hello World");
+
+        // Method 3
+        const btn1 = document.querySelector('#btn1');
+        btn1.addEventListener('click', () => {
+            alert("Hello World");
+        });
+    </script>
+</body>
+</html>
